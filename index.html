@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="sc" href="style.css">
+
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<main>
+<div class="container">
+  <div class="inputs" id="inputs">
+
+    <div class="day">
+      <h3 class="h1" >D A Y</h3>
+      <input id="dayin" type="number" placeholder="DD" pattern="\d{2}" >
+      <p class="errors" id="dayerror1" style=" display:none;" >This field is required</p>
+      <p class="errors" id="dayerror2" style=" display:none;" >Must be a valid day</p>
+      <p class="errors" id="dayerror3" style=" display:none;" >Must be a valid date</p>
+    </div>
+
+    <div class="month">
+      <h3 class="h1" >M O N T H</h3>
+      <input id="monthin" type="number" placeholder="MM" pattern="\d{2}" > 
+      <p class="errors" id="montherror1" style=" display:none;" >This field is required</p>
+      <p class="errors" id="montherror2" style=" display:none;" >Must be a valid month</p>
+    </div>
+
+    <div class="year">
+      <h3 class="h1" >Y E A R</h3>
+      <input id="yearin" type="number" placeholder="YYYY" pattern="\d{4}" maxlength="4" name="digitInput" >
+      <p class="errors" id="yearerror1" style=" display:none;" >This field is required</p>
+      <p class="errors" id="yearerror2" style=" display:none;" >Must be in the past</p>
+      <p class="errors" id="yearerror3" style=" display:none;" >Must be a valid year</p>
+    </div>
+
+  </div>
+<div class="line-button">
+  <div class="line">
+    <button class="submit" id="submit"><img type="svg"src="./assets/images/icon-arrow.svg"></img></button>
+  </div>
+</div> 
+<div class="display">
+  <div class="outp">
+    <p id="yearsold"  class="yr-mo-dy"> - -</p><p class="yr-mo-dy"> years</p>
+  </div>
+  <div class="outp">
+    <p id="monthsold" class="yr-mo-dy"> - -</p><p class="yr-mo-dy"> months</p>
+  </div>
+    <div class="outp">
+    <p id="daysold"   class="yr-mo-dy"> - -</p><p class="yr-mo-dy"> days</p>
+  </div>
+</div>
+</div>
+
+<script src="script2.js"></script>
+
+</main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

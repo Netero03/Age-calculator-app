@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    width: 50rem;
+    height: 37.5rem;
+    background-color: white;
+    padding: 3.125rem;
+    display: flex;
+    /* gap: 3.125rem; */
+    flex-direction: column;
+    border-radius: 1.25rem;
+    border-bottom-right-radius: 12.5rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+}
+.h1{
+    color: hsl(0, 1%, 44%);
+    text-align: left;
+    font-size: .9375rem;
+    padding-bottom: .625rem;
+}
+.inputs input {
+    border-color: hsl(0, 0%, 86%); 
+    color: hsl(0, 0%, 8%);
+    border-style:solid;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 2rem;
+    padding-left: 1.25rem;
+    text-align: left;
+    width:10rem;
+    height:4.6875rem;
+    border-width: .0625rem;
+    border-radius: .4375rem;
+    font-weight: 700;
+    
+}
+.inputs input[type="number"]::-webkit-inner-spin-button,
+.inputs input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+.inputs input::placeholder{
+    color: hsl(0, 0%, 57%);
+}
+.inputs input:hover{
+    border-color: hsl(259, 100%, 65%);
+    outline-color: hsl(259, 100%, 65%);
+    caret-color: hsl(259, 100%, 65%);  
+}
+.inputs input:focus{
+    border-color: hsl(259, 100%, 65%);
+    outline-color: hsl(259, 100%, 65%);
+    caret-color: hsl(259, 100%, 65%);
+}
+.display{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    position: relative;
+    top:.625rem
+}
+.outp{
+    display: flex;
+    flex-direction: row;
+    gap: 1.625rem;
+}
+#yearsold , #monthsold , #daysold{
+    color: hsl(259, 100%, 65%);
+}
+.line-button{
+    position:relative;
+    top:3.125rem;
+    height: 3.125rem;
+}
+.line{
+    width: 43.75rem;
+    height:.0625rem;
+    background-color: hsl(0, 0%, 86%);
+    position: relative;
+    align-self: center;
+    
+}
+
+.submit{
+    position: absolute;
+    bottom: -2.9375rem;
+    border-radius: 3.125rem;
+    border-style: none;
+    width: 5.625rem;
+    height: 5.625rem;
+    right:  0rem; 
+    background-color: hsl(259, 100%, 65%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+.yr-mo-dy{
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+    font-style: italic;
+    font-size: 5.625rem;
+    height: 6.25rem;
+    
+}
+
+.errors{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color:hsl(0, 100%, 67%);
+}
