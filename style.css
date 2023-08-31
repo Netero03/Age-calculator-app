@@ -22,10 +22,9 @@ main{
     background-color: white;
     padding: 3.125rem;
     display: flex;
-    /* gap: 3.125rem; */
     flex-direction: column;
-    border-radius: 1.25rem;
-    border-bottom-right-radius: 12.5rem;
+    border-radius: 2.25rem;
+    border-bottom-right-radius: 9.5rem;
 }
 
 .inputs{
@@ -45,9 +44,9 @@ main{
     border-style:solid;
     cursor: pointer;
     transition: 0.3s;
+    text-align: left;
     font-size: 2rem;
     padding-left: 1.25rem;
-    text-align: left;
     width:10rem;
     height:4.6875rem;
     border-width: .0625rem;
@@ -75,7 +74,7 @@ main{
     caret-color: hsl(259, 100%, 65%);
 }
 .display{
-    width: 600px;
+    width: 28.125rem;
     display: flex;
     flex-direction: column;
     gap: 0rem;
@@ -106,7 +105,7 @@ main{
 
 .submit{
     position: absolute;
-    bottom: -2.9375rem;
+    bottom: -2.6965rem;
     border-radius: 3.125rem;
     border-style: none;
     width: 5.625rem;
@@ -115,9 +114,19 @@ main{
     background-color: hsl(259, 100%, 65%);
     transition: 0.3s;
     cursor: pointer;
+    max-width: 100%;
+    display: flex;
+    
 }
 .submit:hover{
     background-color: hsl(0, 0%, 8%);
+}
+.submit img{
+    position:absolute;
+    max-width: 50%;
+    height: auto;
+    align-self: center;
+    right: 1.4rem;
 }
 
 .yr-mo-dy{
@@ -135,3 +144,65 @@ main{
     font-style: italic;
     color:hsl(0, 100%, 67%);
 }
+
+@media (width <= 800px){  
+    html{
+        font-size: 70%;     
+    }
+    main{
+        height:100vh;
+
+    }
+    .h1{
+        font-size: 110%;   
+    }
+    .line{
+        width: 295px;
+        height: 2px;
+        background-color: hsl(0, 2%, 90%);
+    }
+    .submit{
+        right:10rem;
+        
+    }
+    .submit img{
+        max-width: 50%;
+        
+    }
+    .container{
+        width: 345px;
+        height: 500px;
+        padding: 2.1875rem;
+        padding-top: 50px;
+        position: relative;
+        bottom:100px;
+    }
+    .inputs{
+        gap: 1.25rem;
+    }
+    .inputs input {
+        font-size: 1.6875rem;
+        padding-left: 1.25rem;
+        width:8rem;
+        height:4.6875rem;
+        border-width: .1563rem;
+        border-radius: .625rem;
+        border-color:hsl(0, 0%, 82%);
+    }
+    .yr-mo-dy{
+        font-size: 4.7rem;
+        height: 6.25rem;
+        
+    }
+    .outp{
+        gap: 0.9rem;
+    }
+    .line-button{
+        top:60px;
+    }
+    .display{
+        width: 28.125rem;
+        gap: 0rem;
+        top:75px;
+    }
+    }
