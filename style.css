@@ -84,7 +84,7 @@ main{
 .outp{
     display: flex;
     flex-direction: row;
-    gap: 1.625rem;
+    gap: 0.625rem;
 }
 #yearsold , #monthsold , #daysold{
     color: hsl(259, 100%, 65%);
@@ -121,14 +121,22 @@ main{
 .submit:hover{
     background-color: hsl(0, 0%, 8%);
 }
-.submit img{
+#arrow1{
+    display: block;
     position:absolute;
     max-width: 50%;
     height: auto;
     align-self: center;
     right: 1.4rem;
 }
-
+#arrow2{
+    display:none;
+    position:absolute;
+    max-width: 50%;
+    height: auto;
+    align-self: center;
+    right: 1.6rem;
+}
 .yr-mo-dy{
     color: hsl(0, 0%, 8%);
     font-weight: 800;
@@ -165,9 +173,13 @@ main{
         right:10rem;
         
     }
-    .submit img{
+    #arrow1{
         max-width: 50%;
-        
+        display: none;
+    }
+    #arrow2{
+        max-width: 40%;
+        display:block;
     }
     .container{
         width: 345px;
@@ -205,4 +217,5 @@ main{
         gap: 0rem;
         top:75px;
     }
+    
     }
