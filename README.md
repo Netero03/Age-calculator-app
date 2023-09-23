@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/Netero03/Age-calculator-app)
+- Solution URL: [solution URL](https://github.com/Netero03/Age-calculator-app.git)
 - Live Site URL: [live site URL](https://netero03.github.io/Age-calculator-app/)
 
 ## My process
